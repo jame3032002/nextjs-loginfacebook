@@ -1,0 +1,10 @@
+{
+  "presets": [
+    "next/babel"
+  ],
+  "env": {
+    "development": {
+      "plugins": ["inline-dotenv"]
+    }
+  }
+}
