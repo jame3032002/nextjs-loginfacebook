@@ -16,7 +16,7 @@ passport.use(auth.facebookStrategy)
 
 app.prepare().then(() => {
   const server = express()
-  require('./routes')(server)
+  require('./routes')(app, server)
 
   server.get('*', (req, res) => {
     return handle(req, res)
